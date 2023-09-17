@@ -1,0 +1,13 @@
+1.1 - Caso de Uso:
+En el sistema de ventas, se necesita una función que calcule el total de una factura.
+Diseña el prototipo de la función, incluyendo los parámetros necesarios y el valor de retorno.
+
+Toma en cuenta que en el sistema de facturación cada factura está compuesta por dos tablas una de ellas 
+contine las cabeceras de facturas en donde se encuentran los datos generales de la misma, como folio, 
+cliente, dirección, fecha (no se encuentra el total de la factura), 
+y en otra tabla se encuentras las líneas de la factura en donde se encuentran datos como: 
+id de articulo, monto, IVA, cantidad de artículos, id de la factura a la que pertenece, nombre del articulo
+Diseña el pseudocodigo que te permita consultar el total de una o varias facturas
+
+Pseudocodigo:
+
