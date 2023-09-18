@@ -8,7 +8,6 @@
 
     Pseudocodigo:
     funcion facturaEncontrada obtenerFacturas(id_Factura){
-        facturas = new array()
         var connection = new sql connection() // se crea un objeto para conectarse a la base de datos, en C# se puede usar Using para que cierre las conexiones
         connection.open()
         string consulta = "select * from tablaFacturas where id=@id_Factura"
