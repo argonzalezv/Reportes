@@ -49,7 +49,7 @@
  Para la logica de obtener los datos, se crea una funcion que obtenga los valores de las facturas,
  como es muy similar a la funcion totalFacturaFacturas se puede volver a usar.
 
- function void Ventas(){
+ function array Ventas(){
     dictionary <date, double> ventas1 = new dictionary
     dictionary <date, double> ventas2 = new dictionary
 
@@ -77,10 +77,14 @@
         }
     }
 
-
+    return ventas1, ventas2
  }
+ //La funcion anterior seria mas como una clase, para poder generar objetos de ella
 
-    function DashBoard(ventas1, ventas2)
+  Ventas vent = new Ventas()  
+   
+
+    function DashBoard(vent[0], vent[1])
 
 
  Observaciones. Una vez obtenido el DashBoard se puede visualizar en la imagen llamada Dashboard Ventas 1.2  que las ventas tienen una tendencia a la alta, 
