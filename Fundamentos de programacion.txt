@@ -8,12 +8,13 @@
 
     Pseudocodigo:
     funcion facturaEncontrada obtenerFacturas(id_Factura){
+        list <facturaEnBase>facturaEncontrada= new list <facturaEnBase> //usaremos un objeto del modelo para guardar los valores, uno que nosotros creamos en el que le pasamos los resultados de la consulta
         var connection = new sql connection() // se crea un objeto para conectarse a la base de datos, en C# se puede usar Using para que cierre las conexiones
         connection.open()
         string consulta = "select * from tablaFacturas where id=@id_Factura"
         sqlquery query = new sqlquery()
         query.execute(consulta)
-        if(query != null){ //usaremos un objeto del modelo para guardar los valores, uno que nosotros creamos en el que le pasamos los resultados de la consulta 
+        if(query != null){  
             foreach facturaEnBase in query{
                 facturaEncontrada.folio = facturaEnBase.folio
                 ... // y asi para todos los datos
@@ -38,3 +39,44 @@
         }
         return totalF   
          }
+1.2 
+ Metodologia. Aqui voy a definir una funcion que se llame DashBoard que hara la presentacion de la funcion
+ Este DashBoard tendra dos niveles de grafica de barras, ya sea en dos graficas separadas o colocadas una junto 
+ a la otra, para contrastar los valores y comprobar si los patrones se repiten.
+
+ Para la logica de obtener los datos, se crea una funcion que obtenga los valores de las facturas,
+ como es muy similar a la funcion totalFacturaFacturas se puede volver a usar.
+
+ function void VentasAnuales(){
+    double ventasMensuales = 0
+    dictionary <date, double> ventas1 = new dictionary
+    dictionary <date, double> ventas2 = new dictionary
+
+    list claseFacturas facturas = new list claseFacturas()
+    year = date.thisyear()
+    year2=year-2
+    //Aqui podemos usar un llamado directo para hacer una conexion con la base de datos para traernos la informacion
+    //como en la anterior funcion, o hacemos un llamado a los modelos que se hayan obtenido mediante el
+    // entity framework. Vamos a tomar esta ultima opcion ahora
+
+        using (sqlcon connection = new sqlcon())
+    {
+        foreach facturasDB in facturasModeloBase{
+            if(facturasDB.fecha>=year2 and facturasDB.fecha<=year)
+            facturas.fecha = facturasDB.fecha
+            ...
+            if(date.year(facturas.fecha)>=year2 && date.year(facturas.fecha)<year-1){
+                mes = date.month(facturas.fecha)
+                ventas1.add (mes,totalFactura(facturas.Id))
+            }
+            if(date.year(facturas.fecha)>=year-1){
+                mes = date.month(facturas.fecha)
+                ventas1.add (mes,totalFactura(facturas.Id))
+            }
+        }
+    }
+
+ }
+
+
+
