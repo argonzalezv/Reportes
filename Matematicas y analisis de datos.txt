@@ -1,6 +1,6 @@
 2.1 - Caso de Uso:
-Metodologia. El parametro que define el problema es el precio promedio, una vez obtenido, podemos comparar
-todos los productos contra este valor y saber cuales estan por debajo. Para ello obtendremos el total de ventas
+Metodología. El parámetro que define el problema es el precio promedio, una vez obtenido, podemos comparar
+todos los productos contra este valor y saber cuáles están por debajo. Para ello obtendremos el total de ventas
 y lo dividiremos entre el total de productos vendidos. A partir de esto discriminamos los productos por precio
 y mediante un contador llevamos el total de ellos.
 
@@ -53,13 +53,13 @@ function int productosMenoresPromedio(date mes, int productoId){
 
 2.2
 
-Metodologia. Existen dos puntos basicos, manejar lo que se considera un aumento signiticativo en las ventas,
-y obtener los valores de un historial para poder diferenciar en base a este vaor, cuales fueron los productos
-que lo lograron. Vamos a considerar los ultimos 2 trimestres pasado como historial, porque enmarcan el pasado\
-cercano mas significativo y el aumento lo vamos a poner en un 10%, en realidad puede llegar a tomar cualquier valor.
+Metodología. Existen dos puntos básicos, manejar lo que se considera un aumento significativo en las ventas,
+y obtener los valores de un historial para poder diferenciar, con base en este valor, cuáles fueron los productos
+que lo lograron. Vamos a considerar los últimos 2 trimestres pasados como historial, porque enmarcan el pasado\
+cercano más significativo y el aumento lo vamos a poner en un 10%, en realidad puede llegar a tomar cualquier valor.
 
-Usaremos una funcion muy parecida al de las ventas por los 2 ultimos años, solo le haremos unos cambios, sacaremos
-un promedio de los productos en estos dos trimestres y lo comparemos contra los actuales, tomando en cuenta el parametro.
+Usaremos una función muy parecida al de las ventas por los 2 últimos años, solo le haremos unos cambios, sacaremos
+un promedio de los productos en estos dos trimestres y lo comparamos contra los actuales, tomando en cuenta el parámetro..
 
 function array Ventas(id.Producto){
     //en vez de usar year, definiremos periodos de 3 meses
