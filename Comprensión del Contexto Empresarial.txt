@@ -1,0 +1,63 @@
+3.1
+Explica cómo el desarrollo de una aplicación para generar informes automáticos podría mejorar la
+eficiencia de los gerentes de ventas al tomar decisiones.
+
+La capacidad de tener la informacion a la mano es fundamental para poder tomar desiciones, ya que
+en conforme se conoce como se estan comportando los diferentes flujos dentro de la empresa, internos o
+externos permiten descubir areas de mejora e intentar reaizar acciones correctivas mientras aun pueden 
+tener efectos significativos.
+Si se le agrega la capacidad de obtener informacion en tiempo real, y mantener un historico de los 
+datos de los movimientos que se han tenido en el ultimo periodo, le permitira a los gerentes de ventas
+visualizar cuales son los productos que se estan vendiendo mas rapidamente, de cuales puede existir una desabasto,
+con cuales se tiene una mayor ganancia, caules son los que estan paramod por mas tiempo. Esto permitira
+generar una planes para potencializar el estado de las ventas, ya sea mediante marketing para promover un producto
+en particular, o ver si se estan teniendo problemas internos con logistica, o contabilidad o sistemas
+y puedan ser aborados con datos concretos.
+
+
+3.2 ¿Qué tipo de información podría recolectarse desde un punto de venta para ayudar a los analistas
+a identificar patrones de compra de los clientes? Proporciona un ejemplo concreto.
+
+Un punto de venta le puede informar a los analistas sobre los productos que se han vendido en el ultimo mes o cualquier rango de tiempo, 
+la cantidad que se vendio y cuanto fue el total de todos los articulo que han logrado mover. Se puede tener
+disponible la informacion de los clientes, y poder visualizar cuales han sido los que tienen
+los movimientos mas voluminosos o frecuentes para poder intentar predecir cuando es conveniente acercarse
+de nuevo a ellos a traves de los vendedores. Se puede hacer un analisis estadistico
+con respecto a diferentes variables, como ventas con respecto a epocas del año, o con respecto
+a zona geografica, dia de la semana, dias en los que llovio mas, en los que hizo mas calor, o frio,
+dias festivos, o de eventos especiales, si los clientes viven en zonas rurales que es lo que mas llevan.
+Para ello se debe optimizar el punto de venta para poder obtener la informacion del cliente, como lugar en el que vive,
+cual es la aplicacion para la que desea el producto, el tiempo en el que se compro, la frecuancia y el volumen que tuvo de compra
+Ademas de estos datos, se pueden considerar los valores climativos y sociales del entorno actual del comprador.
+
+Nos puede dar informacion como que en los dias lluviosos se llevan mas de un producto, o que los clientes de la zonas serranas tienen mas problemas de
+humedad que los  que viven en la ciudad, o que los meses de agosto a octubre llueve mucho en el municipio, por lo que daria informacion util para saber de
+que producto abastecerse en diferentes epocas y que es lo que los clientes de ciertas zonas buscan mas y buscar
+tener siempre disponible.
+
+3.3 Imagina que debes diseñar una interfaz de usuario para un reporte de ventas que será utilizado
+por gerentes no técnicos. ¿Qué consideraciones tendrías en cuenta para hacerlo intuitivo y fácil de
+usar?
+
+
+Informacion comparativa entre dias, meses u otros periodos con respecto a productos en particular o ventas totales
+los pondria en graficas  para que pudiera contrastar los logros o deficits que se tienen con respecto a lo esperado.
+
+Los tops de productos mas vendidos en ciento rango de tiempo los colocaria en una tabla.
+
+Si se tienen varias sucursales, esta misma informacion general dividirla por ellas.
+
+Ventas por vendedor, por ejemplo en una grafica circular, para saber quien esta aportando mas. De aqui se puede 
+obtener un top de vendedores
+A quienes se les dieron los bonos
+Tambien pondria enfasis en los productos que no se estan vendiendo, en un histograma para remarcar su comportamiento.
+
+Un historico de como se comporto este mismo periodo pero de los ultimos dos años.
+
+Las letras no muy pequeñas, primero las graficas y despues las tablas, colores no muy llamativos, pero que
+ayuden a captar la atencion sin cansar.
+
+Colocar colores que inciten a poner atencion en los productos que repentinamente han sufrido reducciones
+en ventas, asi como identificar aquellos que se han vendido mas de lo esperado.
+
+
