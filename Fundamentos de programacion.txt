@@ -43,11 +43,13 @@
  Metodologia. Aqui voy a definir una funcion que se llame DashBoard que hara la presentacion de la funcion
  Este DashBoard tendra dos niveles de grafica de barras, ya sea en dos graficas separadas o colocadas una junto 
  a la otra, para contrastar los valores y comprobar si los patrones se repiten.
+ El historico se toma como un valor fijo, pero se puede poner un calendario dentro de la interfaz del usuario,
+ para que elija las fechas, tomar estos valores como parametros, y realizar una consulta mas dinamica.
 
  Para la logica de obtener los datos, se crea una funcion que obtenga los valores de las facturas,
  como es muy similar a la funcion totalFacturaFacturas se puede volver a usar.
 
- function void VentasAnuales(){
+ function void Ventas(){
     double ventasMensuales = 0
     dictionary <date, double> ventas1 = new dictionary
     dictionary <date, double> ventas2 = new dictionary
@@ -76,7 +78,16 @@
         }
     }
 
+
  }
+
+    function DashBoard(ventas1, ventas2)
+
+
+ Observaciones. Una vez obtenido el DashBoard se puede visualizar en la imagen llamada Dashboard Ventas 1.2  que las ventas tienen una tendencia a la alta, 
+ en los meses que estan al inicio y al final del año, coincidiendo con los meses de frio, podemos tomar esta
+ tendencia para observar que productos pueden beneficiar a los clientes en estas fechas, y que modificaciones les
+ podemos hacer al catalogo para ofrecer soluciones en epoca de verano.
 
 
 
