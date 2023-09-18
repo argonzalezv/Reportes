@@ -50,7 +50,6 @@
  como es muy similar a la funcion totalFacturaFacturas se puede volver a usar.
 
  function void Ventas(){
-    double ventasMensuales = 0
     dictionary <date, double> ventas1 = new dictionary
     dictionary <date, double> ventas2 = new dictionary
 

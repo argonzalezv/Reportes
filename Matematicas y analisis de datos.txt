@@ -1,0 +1,52 @@
+2.1 - Caso de Uso:
+Metodologia. El parametro que define el problema es el precio promedio, una vez obtenido, podemos comparar
+todos los productos contra este valor y saber cuales estan por debajo. Para ello obtendremos el total de ventas
+y lo dividiremos entre el total de productos vendidos. A partir de esto discriminamos los productos por precio
+y mediante un contador llevamos el total de ellos.
+
+function int productosMenoresPromedio(date mes, int productoId){
+    int menoresPromedio = 0
+    double ingresosTot = 0
+    double ingresosProducto=0
+    double precioPromedio = 0
+    int contadorProducto = 0
+    double promedioProducto = 0
+
+    int contador = 0
+    list claseFacturas facturas = new list claseFacturas()
+
+     using (sqlcon connection = new sqlcon())
+    {
+        foreach facturasDB in facturasModeloBase{
+           if(facturasDB.date.month() == mes)
+           {
+            facturas.monto = facturasDB.monto
+            ...
+            ingresosTot+=factura.monto*factura.factura.cantidad
+            //Se puede tomar o no el iva, ya que afecta igual al proceso independiente de los articulos
+            contador++
+           }
+        }
+
+    }
+
+    precioPromedio = ingresosTot/contador
+
+     foreach factus in facturas{
+        if(factus.date.month() == mes && factus.productoid == productoId){
+            ingresosProducto+=factura.monto*factura.factura.cantidad
+            contadorProducto++
+
+        }
+     }
+
+     promedioProducto = ingresosProducto/contadorProducto
+     ingresosProducto=0
+     contadorProducto = 0
+
+     if(promedioProducto<precioPromedio){
+        menoresPromedio++
+     }
+     return menoresPromedio
+
+}
