@@ -2,7 +2,7 @@
 Metodología. El parámetro que define el problema es el precio promedio, una vez obtenido, podemos comparar
 todos los productos contra este valor y saber cuáles están por debajo. Para ello obtendremos el total de ventas
 y lo dividiremos entre el total de productos vendidos. A partir de esto discriminamos los productos por precio
-y mediante un contador llevamos el total de ellos.
+y mediante un contador llevamos el total de ellos. La gráfica correspondiente esta como 'Dashboard productos promedio' 
 
 function int productosMenoresPromedio(date mes, int productoId){
     int menoresPromedio = 0
